@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box .container{
+    max-width:1590px;
+   
+}
+.d-flex{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.main-box{
+    background-image:url('../img/front.webp');
+    height:600px;
+    width: 400px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin: 80px auto;
+}
+.main-box form{
+    text-align: center;
+}
+.main-box form h2{
+    font-size:52px;
+    font-family: Arial, Helvetica, sans-serif;
+   line-height:200px;
+   color: rgb(61, 57, 58);
+}
+.main-box form label{
+    font-size:22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:500;
+    color: rgb(61, 57, 58);
+    line-height:70px;
+   
+}
+.main-box form label input{
+    background-color: rgb(245, 245, 239);
+    text-align: center;
+    padding:5px;
+    border: 1px solid gray;
+    border-radius:5px;
+}
+.main-box form button{
+    padding: 10px;
+    border-radius:10PX;
+    width:180PX;
+    border:none;
+    margin-top:80px;
+    background-color:  rgb(245, 245, 239);
+    color: brown;
+}
+.main-box form .hide,.main-box form .show{
+    border-radius:10PX;
+    border:none;
+    background-color:transparent;
+    color: rgb(61, 57, 58);
+    font-size:14px;
+    font-weight:700;
+}

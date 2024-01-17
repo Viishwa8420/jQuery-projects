@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        FORM
+    </title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="main-box">
+            <div class="container">
+                <div class="row">
+                    <form>
+                        <h2>Sign up</h2>
+                        <label class="align-center">User Name:
+                            <input type="text" placeholder="User Name">
+                        </label><br>
+                        <label>password:
+                            <input type="password" placeholder="creat password">
+                        </label><br> 
+
+                        <button id="btn">Log In</button><br>
+                        <button id="hide">forgot password</button>
+                        <button id="show">don't have any account</button>
+
+
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+       $("form").mouseenter(function(){
+           $(this).css("background-image", "url('../img/front2.jpg')");
+        });
+        $("form").mouseleave(function(){
+           $(this).css("background-image", "url('../img/front.webp')");
+        });
+    
+        $('#btn').click(function(){
+           $(this).css("background-color", "lightblue");
+           alert('login successfully..!!');
+        });
+    
+        $("label input").focus(function(){
+           $(this).css("background-color", "gray");
+        });
+    
+        $('#hide').click(function(){
+           $('#btn').hide(1000);
+        });
+    
+        $('#show').dblclick(function(){
+            $('#btn').toggle(1000);
+        });
+        </script>
+</body>
+
+
+</html>
